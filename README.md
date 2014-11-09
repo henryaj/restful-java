@@ -9,6 +9,8 @@ Download the .zip or `git clone` the repo into a directory of your choice.
 `cd` into the `restful-java` directory and, with JVM installed, run
 
 ```shell
+$ gradle build
+...
 $ java -jar build/libs/gs-rest-service-0.1.0.jar
 ```
 
