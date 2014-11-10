@@ -11,7 +11,7 @@ buildscript {
 
 apply plugin: 'war'
 apply plugin: 'java'
-apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
@@ -29,6 +29,10 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven { url "http://repo.spring.io/libs-release" }
+}
+
+configurations {
+    providedRuntime
 }
 
 dependencies {
